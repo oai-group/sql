@@ -45,5 +45,7 @@ COPY ./$FILE_3 $WORK_PATH/
 
 #把要执行的shell文件放到/docker-entrypoint-initdb.d/目录下，容器会自动执行这个shell
 COPY ./$INSTALL_DATA_SHELL $AUTO_RUN_DIR/
+#声明暴露端口
+EXPOSE 3306
 #给执行文件增加可执行权限
 RUN chmod a+x $AUTO_RUN_DIR/$INSTALL_DATA_SHELL
