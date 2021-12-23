@@ -14,6 +14,9 @@
  Date: 22/10/2021 13:04:18
 */
 
+CREATE DATABASE IF NOT EXISTS `mytestdb`;
+USE `mytestdb`;
+
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
